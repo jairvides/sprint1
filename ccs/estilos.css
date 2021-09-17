@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+    
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo registro"
+    "texto1 texto2 registro"
+    "texto1 texto2 registro";
+position: absolute;}
+
+.titulo { 
+ grid-area: titulo;
+ color: #063970;
+ text-transform: uppercase;
+ font-size: 40px;
+ font-family: "Oswald";
+ text-align: center; 
+ background:#a1e0e7;
+
+
+ }
+
+
+.texto1 { 
+    grid-area: texto1; 
+  font-family: sans-serif;
+  background:#a1e0e7;
+}
+
+.texto2 { 
+    grid-area: texto2;
+  font-family: sans-serif;
+  background:#a1e0e7;
+   }
+
+
+.registro { 
+    grid-area: registro;
+    background: #41a5c9;
+    float: right;
+    width: 300px;
+    }
+
+#vertical_navbar img{
+    border-radius: 100%; 
+    margin-top: 60px;
+    margin-left: 30px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: -40px;
+        
+    
+     }
+ 
+  #btn_Registro {  
+    background: #a1e0e7;
+    display: block;
+    margin: 5px auto;
+    border: 3px solid #3c6382;
+    padding: 14px 40px;
+    outline: none;
+    color: aqua;
+    border-radius: 10px;
+    transition: 0.25s; 
+    cursor: pointer;
+    margin-top: 500px;
+    position: relative;
+    left: 0px;
+}   
+
+#link_Registro{ 
+    color: #fff;
+    text-decoration: none;
+    font-family: "Oswald";
+    font-size: 18px;
+    text-align: center;
+    margin : 5px auto;    
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 40%;
+    margin-top:-50%;
+    position: relative;
+    left: -10px;
+    top: 5px;
+    right: 10px;
+    
+}
+
+#btn_Registro:hover {
+  background:#e28743 ;
+}
+
+#btn_Registro:active {
+  background: #1e81b0;
+  color: white;
+}
+
+#vertical_navbar label{
+    font-family: "Oswald";
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: 500px;
+    left: -100px;
+}
